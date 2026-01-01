@@ -2,19 +2,12 @@
 
 一个 **单文件 Bash 脚本**，用于自动更新 Cloudflare DNS A 记录。
 
-### 特性
-- 使用 `curl ip.sb` 获取公网 IPv4
-- 自动更新 Cloudflare A 记录
-- 交互式配置
-- systemd 定时运行（默认 5 分钟）
-- 无需 jq / Python
 
-### 安装
+## 安装与卸载
+
 ```bash
+# 安装（交互式配置 + 自动启用 systemd 定时任务）
 curl -fsSL https://raw.githubusercontent.com/whatareyoudoing111/ddns-cf/refs/heads/main/cf-ddns.sh | sudo bash -s install
 
-### 卸载
-```bash
+# 卸载（停止并删除定时任务，移除配置与脚本）
 curl -fsSL https://raw.githubusercontent.com/whatareyoudoing111/ddns-cf/refs/heads/main/cf-ddns.sh | sudo bash -s uninstall
-
-
