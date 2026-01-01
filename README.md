@@ -12,6 +12,7 @@
 ### 安装
 ```bash
 curl -fsSL https://raw.githubusercontent.com/whatareyoudoing111/ddns-cf/refs/heads/main/cf-ddns.sh | sudo bash -s install
+
 ### 卸载
 ```bash
 curl -fsSL https://raw.githubusercontent.com/whatareyoudoing111/ddns-cf/refs/heads/main/cf-ddns.sh | sudo bash -s uninstall
